@@ -1,0 +1,127 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+  <head>
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Изучение основ HTML для новичков" />
+    <!--Заголовок страницы в браузере-->
+    <title>Знакомство с HTML-тэгами. Часть №3 (Формы).</title>
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <!-- <h1>Карточка пользователя</h1>
+    <form action="#" method="post" enctype="multipart/form-data"></form>
+    <div><input placeholder="e-mail" type="text" name="username" value="" /></div>
+    <div><input placeholder="password" type="password" name="userpass" value="" /></div>
+    <h2>Предпочитаю</h2>
+    <div>
+      <p><input checked type="radio" name="beer" value="lager" />Светлое пиво</p>
+      <p><input type="radio" name="beer" value="dark" />Темное пиво</p>
+    </div>
+    <br />
+    <h2>Могу иногда выпить</h2>
+    <div>
+      <p><input type="radio" name="beer-two" value="lager" />Светлое пиво</p>
+      <p><input checked type="radio" name="beer-two" value="dark" />Темное пиво</p>
+    </div>
+    <br />
+    <h2>Отметьте соответсвующие пункты</h2>
+    <div>
+      <p><input type="checkbox" name="car" value="yes" />Наличие авто</p>
+      <p><input type="checkbox" name="pet" value="yes" />Наличие домашнего животного</p>
+      <p><input checked type="checkbox" name="hobby" value="yes" />Наличие хобби</p>
+      <p><input type="checkbox" name="married" value="yes" />Женат/Замужем</p>
+    </div>
+    <br />
+    <h2>Загрузите Ваше фото</h2>
+    <div>
+      <p><input type="file" name="photo" /></p>
+    </div>
+    <br />
+    <h2>О себе:</h2>
+    <div>
+     Атрибуты можно не указывать cols="30" rows="10" 
+      <textarea placeholder="Напишите немного о себе." name="text"></textarea>
+    </div>
+    <br />
+    <h2>Выпадающий список</h2>
+    <div>
+      <p>Выберите ваш любимый цвет</p>
+      <select name="color">
+        <option value="red">Красный</option>
+        <option value="yellow">Желтый</option>
+        <option value="blue">Синий</option>
+        <option selected value="green">Зеленый</option>
+        <option value="black">Черный</option>
+      </select>
+    </div>
+    <div>
+      <p>Выберите цвета вашего флага (Ctrl)</p>
+      <select multiple name="colors">
+        <option value="red">Красный</option>
+        <option value="yellow">Желтый</option>
+        <option value="blue">Синий</option>
+        <option value="green">Зеленый</option>
+        <option value="black">Черный</option>
+      </select>
+    </div>
+    <h2>Кнопки</h2>
+    <div><button type="submit">Отправить форму</button></div>
+    <div><button type="reset">Отчистить форму</button></div>
+    <div><button disabled type="button">Поклацать на кнопочку</button></div> -->
+
+    <h1>Заполните форму</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div>
+        <p>Имя</p>
+        <input placeholder="Ваше имя" tabindex="1" name="name" type="text" />
+      </div>
+      <div>
+        <p>Пароль</p>
+        <input placeholder="Ваш пароль" tabindex="2" name="password" type="password" />
+      </div>
+      <div>
+        <p>Телефон</p>
+        <input placeholder="Ваш телефон" tabindex="3" name="userphone" type="tel" />
+      </div>
+      <div>
+        <p>Пол</p>
+        <div><input checked tabindex="4" type="radio" name="gender" value="male" /> Мужской</div>
+        <div><input tabindex="4" type="radio" name="gender" value="female" /> Женский</div>
+      </div>
+      <div>
+        <p>Имущество</p>
+        <div><input checked tabindex="5" type="checkbox" name="bike" value="yes" /> Велосипед</div>
+        <div><input tabindex="6" type="checkbox" name="car" value="yes" /> Машина</div>
+        <div><input disabled tabindex="7" type="checkbox" name="house" value="yes" /> Квартира</div>
+      </div>
+      <div>
+        <p>Дополнительная информация</p>
+        <textarea tabindex="8" placeholder="Немного о себе" name="text"> </textarea>
+      </div>
+      <div>
+        <p>Прикрепить фото</p>
+        <input tabindex="9" type="file" name="userphoto" />
+      </div>
+      <div>
+        <p>Любимый цвет</p>
+        <select tabindex="10" name="color">
+          <option value="red">Красный</option>
+          <option selected value="yellow">Желтый</option>
+          <option value="blue">Синий</option>
+          <option value="green">Зеленый</option>
+          <option value="black">Черный</option>
+        </select>
+      </div>
+      <div>
+        <p>Действия</p>
+        <button tabindex="11" type="submit">Отправить</button>
+        <button tabindex="12" type="reset">Очистить</button>
+      </div>
+    </form>
+  </body>
+</html>

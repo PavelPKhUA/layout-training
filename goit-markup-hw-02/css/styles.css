@@ -1,0 +1,221 @@
+/* MAIN PAGE */
+:root {
+    --primary-white: #ffffff;
+    --primary-texclor: #757575;
+    --secondary-textcolor: #000000;
+    --secondary-background: #2F303A;
+    --brand-color: #2196F3;
+    --header-color: #212121;
+    --team-background: #F5F4FA;
+    --white-transparent: rgba(255, 255, 255, 0.6);
+    --shadow: rgba(0, 0, 0, 0.15);
+    --header-border: #ECECEC;
+    --filter-shadow-one: rgba(0, 0, 0, 0.1);
+    --filter-shadow-two: rgba(0, 0, 0, 0.08);
+    --filter-shadow-three: rgba(0, 0, 0, 0.12);
+}
+
+body {
+    background-color: var(--primary-white);
+    color: var(--primary-texclor);
+    font-family: 'Roboto', 'Hanken', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.page-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid;
+    border-color: var(--header-border);
+}
+
+/* .border {
+    border: 1px solid var(--header-border);
+} */
+
+.page-header a,
+.footer a,
+.products a {
+    text-decoration: none;
+}
+
+.nav a {
+    color: var(--secondary-textcolor);
+}
+
+.nav .link:hover,
+.nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus,
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--brand-color);
+}
+
+.contacts a {
+    color: var(--primary-texclor);
+}
+
+.nav,
+.list {
+    list-style-type: none
+}
+
+.nav .active {
+    color: var(--brand-color);
+}
+
+
+.name {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white);
+}
+
+
+.hero {
+    text-align: center;
+    background: var(--secondary-background);
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+    background: var(--brand-color);
+    color: var(--primary-white);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px var(--shadow);
+    border-radius: 4px;
+}
+
+.hero .button:hover {
+    visibility: hidden;
+}
+
+.company-adress {
+    font-style: normal;
+    color: var(--primary-white);
+}
+
+.logo {
+    color: var(--brand-color);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.page-header .logo>span {
+    color: var(--secondary-textcolor);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--header-color);
+}
+
+.big {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: none;
+}
+
+.small {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-transform: none;
+}
+
+.team {
+    background: var(--team-background);
+}
+
+.box {
+    background-color: var(--primary-white)
+}
+
+
+
+.position {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.footer {
+    background: var(--secondary-background);
+}
+
+.footer .logo>span {
+    color: var(--primary-white);
+}
+
+.adress-link {
+    color: var(--primary-white);
+}
+
+.contact-link {
+    color: var(--white-transparent);
+}
+
+/* PORTFOLIO PAGE */
+.filter-button {
+    background-color: var(--team-background);
+    color: var(--header-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px var(--filter-shadow-one), 0px 1px 2px var(--filter-shadow-two), 0px 2px 2px var(--filter-shadow-three);
+}
+
+.filter-button:hover,
+.filter-button:active {
+    background-color: var(--brand-color);
+    color: var(--primary-white)
+}
+
+.card {
+    font-size: 18px;
+    line-height: 2;
+    text-transform: none;
+    letter-spacing: 0.06em;
+}
+
+.text {
+    text-decoration: none;
+    line-height: 1.88;
+    color: var(--primary-texclor);
+}

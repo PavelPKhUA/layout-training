@@ -1,0 +1,165 @@
+/* Обнуление стилей до стр 93 */
+* {
+    /* отступ внутренний*/
+    padding: 0;
+    /* отступ внешний*/
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+/* применяется для удаления крестика внутри поля ввода, который появляется в браузере ms-internet explorer после начала ввода */
+input::-ms-clear {
+    display: none
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Убирает лишние отступы и пробелы в кнопках в браузере FF */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* Конец обнуления стилей */
+
+:root {
+    --red: #f00;
+    --green: #008000;
+    --yellow: #ff0;
+}
+
+body {
+    padding: 30px;
+}
+
+.text {
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0 0 30px 0;
+}
+
+/* ::first-line Задает стиль первой строки текста | Подстраивается под ширину блока */
+.text::first-line {
+    color: var(--green);
+}
+
+/* ::first-line Задает стиль первой ,буквы текста */
+
+.text::first-letter {
+    color: var(--red);
+    font-size: 50px;
+}
+
+.list {
+    background-color: var(--green);
+}
+
+.list li {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+/* ::before   (::after) Для отображения желаемого еонтента ДО (ПОСЛЕ) содержимого элемента, к которому он добавлен | Используется со свойством content '' (может оставаться пустым) */
+
+.list li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--red);
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+/* При задании свойств псевдоэлементу в состоянии псевдокласса соблюдается такая очередность записи  */
+.list li:hover::before {
+    background-color: var(--yellow);
+}
+
+.list li::after {
+    /* Use CSS code for symbol '»' */
+    content: '\00BB';
+}
+
+/* input::-ms-clear {
+    display: none
+}  из строки 54 применяется для удаления крестика внутри поля ввода, который появляется в браузере ms-internet explorer после начала ввода */
+
+/* 
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+} Убирает лишние отступы и пробелы в кнопках в браузере FF (строка 62)
+ */
